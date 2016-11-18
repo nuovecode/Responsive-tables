@@ -1,0 +1,35 @@
+table strong.thead {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  table {
+  border: 0;
+  }
+  thead {
+    display: none;
+  }
+  
+  tr {
+    display: block;
+    border-bottom: 2px solid #000;
+  }
+  
+  td {
+  display: block;
+  text-align: right;
+  }
+  td strong.thead {
+  display: block;
+  text-align: right;
+  
+  }
+  td:last-child {
+  border-bottom: 0; 
+  }
+  td:after {
+  content:' ';
+  clear: both;
+  display: block;
+  }
+}
